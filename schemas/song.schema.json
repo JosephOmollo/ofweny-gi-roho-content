@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ofweny Gi Roho Song",
+  "type": "object",
+  "required": ["id", "title", "language", "content", "contentVersion"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe unique identifier (e.g., mungu-mwema)"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "titleAlt": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "language": {
+      "type": "string",
+      "enum": ["sw", "en", "luo", "other"]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "key": { "type": "string" },
+    "tempo": { "type": "number", "minimum": 0 },
+    "author": { "type": "string" },
+    "copyright": { "type": "string" },
+    "ccli": { "type": "string" },
+    "content": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full ChordPro source (lyrics + chords)"
+    },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "contentVersion": { "type": "integer", "minimum": 1 }
+  },
+  "additionalProperties": false
+}
