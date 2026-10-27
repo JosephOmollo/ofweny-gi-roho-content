@@ -4,10 +4,13 @@
   "type": "object",
   "required": ["id", "title", "language", "content", "contentVersion"],
   "properties": {
+    "number": {
+      "type": "integer",
+      "minimum": 1
+    },
     "id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$",
-      "description": "URL-safe unique identifier (e.g., mungu-mwema)"
+      "pattern": "^[a-z0-9-]+$"
     },
     "title": { "type": "string", "minLength": 1 },
     "titleAlt": {
@@ -29,8 +32,7 @@
     "ccli": { "type": "string" },
     "content": {
       "type": "string",
-      "minLength": 1,
-      "description": "Full ChordPro source (lyrics + chords)"
+      "minLength": 1
     },
     "updatedAt": { "type": "string", "format": "date-time" },
     "contentVersion": { "type": "integer", "minimum": 1 }

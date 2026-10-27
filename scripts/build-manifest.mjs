@@ -1,4 +1,3 @@
-// scripts/build-manifest.mjs
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -19,7 +18,8 @@ for (const file of files) {
 }
 
 const now = new Date();
-const version = `${now.getUTCFullYear()}.${String(now.getUTCMonth() + 1).padStart(2, '0')}.${String(now.getUTCDate()).padStart(2, '0')}.1`;
+// Generates version like: 20261027-143000
+const version = now.toISOString().replace(/[-:T]/g, '').slice(0, 15).replace(/(\d{8})/, '$1-');
 
 const manifest = {
   contentVersion: version,

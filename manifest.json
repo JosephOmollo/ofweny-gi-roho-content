@@ -1,11 +1,47 @@
 {
-  "contentVersion": "2026.10.26.1",
-  "songCount": 1,
-  "generatedAt": "2026-10-26T19:34:02.183Z",
+  "contentVersion": "20261027-190725.",
+  "songCount": 10,
+  "generatedAt": "2026-10-27T19:07:25.959Z",
   "files": {
+    "songs/ger-odi-e-lwanda.json": {
+      "sha256": "80caa9032e9fcb5cc228aaac37ec0ed7390165a85145d917504ab10706053a00",
+      "size": 1013
+    },
+    "songs/joler-aneno-lwenje-ngeny.json": {
+      "sha256": "11f502462b0b6a932569b779514163cdc84add7cb4221fca65a9d0ecd8177f20",
+      "size": 1476
+    },
+    "songs/jopolo-moruru.json": {
+      "sha256": "00f804a023af2fe099464618152adafe95a73c72bc2d34802f8803dbe1bf8ab8",
+      "size": 1372
+    },
+    "songs/nying-mamit-nayudie-dala.json": {
+      "sha256": "e0a5e6fefd62f61323791ec242fecf2ef89f683b08445fe4dfbdd5af28165c9e",
+      "size": 1616
+    },
     "songs/polo-en-dala-jomoloyo-lweny.json": {
-      "sha256": "8a93c07748607ac11dc001bede945f64fc0128d91cacb1d54d435a5219bf0f0d",
-      "size": 1127
+      "sha256": "11d701410df922a27244f2da06759dc70b9913eaa0b93cf034f2a769f00d1463",
+      "size": 1183
+    },
+    "songs/polo-noban-ka-kalatas.json": {
+      "sha256": "d8c1c433a801af6f6d8f536282aa4d4540c58c9209888a0bf9a4e41bcfe15f7c",
+      "size": 1172
+    },
+    "songs/ruoth-kandalona-ogik.json": {
+      "sha256": "051bc9789305f6373407606bbd579a45438c3e5a3515d45789eae1e90d37ac36",
+      "size": 956
+    },
+    "songs/ruoth-yesu-e-motelona.json": {
+      "sha256": "51d3e7f963ec97c80aaa4c7c8b0c10ff84c9c119054d296285b4e0c23dd0e387",
+      "size": 1517
+    },
+    "songs/wach-nyasaye-ji-pok-ongeyo.json": {
+      "sha256": "b21382bab221ad09ec28ea333662d2027c85341c2f68b9282e353e0d1f10d2af",
+      "size": 1024
+    },
+    "songs/yesu-obiro-kelo-bura.json": {
+      "sha256": "5f4426eaa3eac43617526cdc4b74e17f02f19310ac5b1c548458371bc47c8fff",
+      "size": 976
     }
   }
 }

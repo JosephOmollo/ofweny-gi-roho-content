@@ -1,10 +1,14 @@
-// scripts/validate-songs.mjs
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import Ajv from 'ajv';
-import { ChordProParser } from 'chordproject-parser';
+import addFormats from 'ajv-formats';
+import ChordSheetJS from 'chordsheetjs';
+
+const { ChordProParser } = ChordSheetJS;
 
 const ajv = new Ajv({ allErrors: true });
+addFormats(ajv); // <--- THIS LINE IS CRUCIAL
+
 const schema = JSON.parse(readFileSync('./schemas/song.schema.json', 'utf-8'));
 const validate = ajv.compile(schema);
 
@@ -12,6 +16,7 @@ const songsDir = './songs';
 const files = readdirSync(songsDir).filter(f => f.endsWith('.json'));
 
 let hasErrors = false;
+const seenNumbers = new Map();
 
 for (const file of files) {
   const filePath = join(songsDir, file);
@@ -42,6 +47,16 @@ for (const file of files) {
     console.error(`❌ ${file}: ChordPro parse error — ${e.message}`);
     hasErrors = true;
     continue;
+  }
+
+  // Check for duplicate song numbers
+  if (song.number !== undefined) {
+    if (seenNumbers.has(song.number)) {
+      console.error(`❌ ${file}: duplicate number ${song.number} — already used by ${seenNumbers.get(song.number)}`);
+      hasErrors = true;
+      continue;
+    }
+    seenNumbers.set(song.number, file);
   }
 
   console.log(`✅ ${file}: OK`);

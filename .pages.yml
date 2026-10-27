@@ -1,0 +1,69 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: songs
+    label: Worship Songs
+    type: collection
+    path: songs
+    filename: "{fields.id}.json"
+    view:
+      fields: [number, title, language]
+    fields:
+      - name: number
+        label: Song Number
+        type: number
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: id
+        label: URL ID (slug)
+        type: string
+        required: true
+        description: "Lowercase, hyphens only (e.g., polo-en-dala)"
+      - name: titleAlt
+        label: Alternate Titles
+        type: list
+        field:
+          type: string
+      - name: language
+        label: Language
+        type: select
+        options:
+          values: [luo, sw, en, other]
+        required: true
+      - name: content
+        label: Lyrics & Chords (ChordPro)
+        type: text
+        required: true
+        description: "Use {verse}, {chorus}, and [G] for chords."
+      - name: tags
+        label: Tags
+        type: list
+        field:
+          type: string
+      - name: key
+        label: Musical Key
+        type: string
+      - name: author
+        label: Author
+        type: string
+        default: "Traditional"
+      - name: copyright
+        label: Copyright
+        type: string
+        default: "Public Domain"
+      - name: ccli
+        label: CCLI Number
+        type: string
+      - name: updatedAt
+        label: Last Updated
+        type: date
+        required: true
+      - name: contentVersion
+        label: Content Version
+        type: number
+        default: 1
+        hidden: true

@@ -1,0 +1,40 @@
+name: Update Manifest
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'manifest.json' # Prevents infinite loops when the action updates the manifest
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push the updated manifest back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Validate Songs
+        run: node scripts/validate-songs.mjs
+
+      - name: Build Manifest
+        run: node scripts/build-manifest.mjs
+
+      - name: Commit and Push Manifest
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+          git add manifest.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update manifest.json" && git push)
