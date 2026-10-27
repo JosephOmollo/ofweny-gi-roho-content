@@ -16,7 +16,3 @@ When you save a song in Pages CMS, a GitHub Action automatically runs to:
 4. Rebuild the `manifest.json` file used by the mobile app.
 
 If the validation fails, the GitHub Action will fail, and your app will not receive the broken update.
-
-## 📱 How the App Gets Updates
-The app fetches `manifest.json` via jsDelivr CDN:
-`https://cdn.jsdelivr.net/gh/JosephOmollo/ofweny-gi-roho-content@latest/manifest.json`
