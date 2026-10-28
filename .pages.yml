@@ -24,10 +24,9 @@ content:
         required: true
         description: "Lowercase, hyphens only (e.g., polo-en-dala)"
       - name: titleAlt
-        label: Alternate Titles
-        type: list
-        field:
-          type: string
+        label: Alternate Titles (separate with commas)
+        type: string
+        
       - name: language
         label: Language
         type: select
@@ -40,10 +39,9 @@ content:
         required: true
         description: "Use {verse}, {chorus}, and [G] for chords."
       - name: tags
-        label: Tags
-        type: list
-        field:
-          type: string
+        label: Tags (separate with commas)
+        type: string
+        
       - name: key
         label: Musical Key
         type: string
