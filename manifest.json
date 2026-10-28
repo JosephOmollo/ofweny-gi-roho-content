@@ -1,47 +1,47 @@
 {
-  "contentVersion": "20261028-200336.",
+  "contentVersion": "20261028-203521.",
   "songCount": 10,
-  "generatedAt": "2026-10-28T20:03:36.824Z",
+  "generatedAt": "2026-10-28T20:35:21.595Z",
   "files": {
     "songs/ger-odi-e-lwanda.json": {
-      "sha256": "80caa9032e9fcb5cc228aaac37ec0ed7390165a85145d917504ab10706053a00",
-      "size": 1013
+      "sha256": "e28934cfc85a21c72ca501505669b51ac73e9f8ddfa92e082aba09f82c1b5fbc",
+      "size": 1003
     },
     "songs/joler-aneno-lwenje-ngeny.json": {
-      "sha256": "11f502462b0b6a932569b779514163cdc84add7cb4221fca65a9d0ecd8177f20",
-      "size": 1476
+      "sha256": "dad616db230db6e839c5a6949f222c2154e1a3f1be5c37a6fbdaa72dfcbf8c54",
+      "size": 1466
     },
     "songs/jopolo-moruru.json": {
-      "sha256": "00f804a023af2fe099464618152adafe95a73c72bc2d34802f8803dbe1bf8ab8",
-      "size": 1372
+      "sha256": "5e9a2c575a4eed58f9312156c91121d2b7011ca0d92e7fecd27eb5413acb3b14",
+      "size": 1362
     },
     "songs/nying-mamit-nayudie-dala.json": {
-      "sha256": "e0a5e6fefd62f61323791ec242fecf2ef89f683b08445fe4dfbdd5af28165c9e",
-      "size": 1616
+      "sha256": "fc5314827e7fb3d83f0ecff88e53751f059640dfa86510d6ef095f903684c8d4",
+      "size": 1606
     },
     "songs/polo-en-dala-jomoloyo-lweny.json": {
-      "sha256": "11d701410df922a27244f2da06759dc70b9913eaa0b93cf034f2a769f00d1463",
-      "size": 1183
+      "sha256": "a27bcf3aeb8354d69614814d78fb40604fd4a8fea61363c277f38c250c9f3ace",
+      "size": 1151
     },
     "songs/polo-noban-ka-kalatas.json": {
-      "sha256": "d8c1c433a801af6f6d8f536282aa4d4540c58c9209888a0bf9a4e41bcfe15f7c",
-      "size": 1172
+      "sha256": "9a142afbe796512757d62b7d7f591d61eaae20431ddd344c50e300d64755fbc8",
+      "size": 1162
     },
     "songs/ruoth-kandalona-ogik.json": {
-      "sha256": "051bc9789305f6373407606bbd579a45438c3e5a3515d45789eae1e90d37ac36",
-      "size": 956
+      "sha256": "1947103ed1e431c317dc3487e8cf07ba5ec07f1567c4f1b3ad7c2abe238aa8be",
+      "size": 946
     },
     "songs/ruoth-yesu-e-motelona.json": {
-      "sha256": "51d3e7f963ec97c80aaa4c7c8b0c10ff84c9c119054d296285b4e0c23dd0e387",
-      "size": 1517
+      "sha256": "560f7f303871de65616db2a0a178e9d4d1077788220d68eac6512211d305b481",
+      "size": 1507
     },
     "songs/wach-nyasaye-ji-pok-ongeyo.json": {
-      "sha256": "b21382bab221ad09ec28ea333662d2027c85341c2f68b9282e353e0d1f10d2af",
-      "size": 1024
+      "sha256": "8759d1f4cfe77a88821b2572858445594311b36360d2908ec227add55d351e56",
+      "size": 1014
     },
     "songs/yesu-obiro-kelo-bura.json": {
-      "sha256": "5f4426eaa3eac43617526cdc4b74e17f02f19310ac5b1c548458371bc47c8fff",
-      "size": 976
+      "sha256": "7ddd2a4363a21a25559aa6576cb29fe36937b6b35beac3a82ac255067417e490",
+      "size": 966
     }
   }
 }
