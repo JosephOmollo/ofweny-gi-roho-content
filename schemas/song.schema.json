@@ -14,16 +14,20 @@
     },
     "title": { "type": "string", "minLength": 1 },
     "titleAlt": {
-      "type": "array",
-      "items": { "type": "string" }
+      "anyOf": [
+        { "type": "array", "items": { "type": "string" } },
+        { "type": "string" }
+      ]
     },
     "language": {
       "type": "string",
       "enum": ["sw", "en", "luo", "other"]
     },
     "tags": {
-      "type": "array",
-      "items": { "type": "string" }
+      "anyOf": [
+        { "type": "array", "items": { "type": "string" } },
+        { "type": "string" }
+      ]
     },
     "key": { "type": "string" },
     "tempo": { "type": "number", "minimum": 0 },
