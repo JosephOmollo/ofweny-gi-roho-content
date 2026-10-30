@@ -1,7 +1,7 @@
 {
-  "contentVersion": "20261028-205055.",
+  "contentVersion": "20261030-064911.",
   "songCount": 10,
-  "generatedAt": "2026-10-28T20:50:55.576Z",
+  "generatedAt": "2026-10-30T06:49:11.614Z",
   "files": {
     "songs/ger-odi-e-lwanda.json": {
       "sha256": "e28934cfc85a21c72ca501505669b51ac73e9f8ddfa92e082aba09f82c1b5fbc",
@@ -20,8 +20,8 @@
       "size": 1606
     },
     "songs/polo-en-dala-jomoloyo-lweny.json": {
-      "sha256": "4b0e856fe506fa4d2fb1b233d063fa501d981c9d4f35c80432c12bc9be0f5171",
-      "size": 1132
+      "sha256": "0516970bfc4a55c263d43da2739021f5eb0123c5edf8c666bd8ab964bcca032e",
+      "size": 1114
     },
     "songs/polo-noban-ka-kalatas.json": {
       "sha256": "9a142afbe796512757d62b7d7f591d61eaae20431ddd344c50e300d64755fbc8",
